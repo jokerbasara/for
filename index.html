@@ -36,35 +36,35 @@ img, video { display: block; max-width: 100%; }
 
 /* LOCK SCREEN */
 #lock-screen { flex-direction: column; align-items: center; justify-content: center; padding: 20px; background: radial-gradient(circle at center, #16120e 0%, #080604 80%); }
-.book-closed { width: 220px; height: 310px; position: relative; perspective: 1400px; margin-bottom: 50px; animation: bookFloat 6s ease-in-out infinite; }
+.book-closed { width: 180px; height: 254px; position: relative; perspective: 1400px; margin-bottom: 40px; animation: bookFloat 6s ease-in-out infinite; }
 @keyframes bookFloat { 0%, 100% { transform: translateY(0) rotateX(2deg); } 50% { transform: translateY(-12px) rotateX(-2deg); } }
-.book-closed .book-3d { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; transform: rotateY(-18deg) rotateX(10deg); transition: transform 1.4s cubic-bezier(0.6, 0, 0.2, 1); }
+.book-closed .book-3d { width: 100%; height: 100%; position: relative; transform-style: preserve-3d; -webkit-transform-style: preserve-3d; transform: rotateY(-18deg) rotateX(10deg); transition: transform 1.4s cubic-bezier(0.6, 0, 0.2, 1); }
 .book-closed .cover { position: absolute; inset: 0; background: linear-gradient(135deg, #3d2314 0%, #1a0f08 100%); border-radius: 4px 12px 12px 4px; box-shadow: inset 0 0 60px rgba(0,0,0,0.8), 0 30px 60px rgba(0,0,0,0.8), 0 0 80px rgba(212, 175, 100, 0.1); border: 2px solid rgba(150, 100, 40, 0.5); transform-origin: left center; }
-.book-closed .spine { position: absolute; left: 0; top: 0; bottom: 0; width: 22px; background: linear-gradient(90deg, #0a0604, #2d1a0e 50%, #1a0f08); border-radius: 4px 0 0 4px; border-right: 1px solid rgba(0,0,0,0.5); }
+.book-closed .spine { position: absolute; left: 0; top: 0; bottom: 0; width: 20px; background: linear-gradient(90deg, #0a0604, #2d1a0e 50%, #1a0f08); border-radius: 4px 0 0 4px; border-right: 1px solid rgba(0,0,0,0.5); }
 .book-closed .cover-deco { position: absolute; inset: 15px; border: 1px solid rgba(212, 175, 100, 0.4); border-radius: 2px; }
-.book-closed .cover-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Caveat', cursive; font-size: 32px; color: #e8d5a8; text-shadow: 0 2px 15px rgba(212, 175, 100, 0.4); text-align: center; line-height: 1.2; }
-.lock-title { font-size: 24px; font-weight: 400; letter-spacing: 2px; color: #f4e6c8; text-align: center; margin-bottom: 6px; font-style: italic; }
-.lock-subtitle { font-family: 'Caveat', cursive; font-size: 22px; color: #c4a882; margin-bottom: 35px; text-align: center; }
-.lock-input-wrap { width: 260px; margin-bottom: 16px; }
-#password { width: 100%; padding: 16px 20px; font-size: 24px; letter-spacing: 8px; text-align: center; color: #f4e6c8; background: rgba(15, 10, 8, 0.7); border: 1px solid rgba(212, 175, 100, 0.5); border-radius: 10px; outline: none; backdrop-filter: blur(5px); transition: all 0.3s ease; }
+.book-closed .cover-title { position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-family: 'Caveat', cursive; font-size: 28px; color: #e8d5a8; text-shadow: 0 2px 15px rgba(212, 175, 100, 0.4); text-align: center; line-height: 1.2; }
+.lock-title { font-size: 22px; font-weight: 400; letter-spacing: 2px; color: #f4e6c8; text-align: center; margin-bottom: 6px; font-style: italic; }
+.lock-subtitle { font-family: 'Caveat', cursive; font-size: 20px; color: #c4a882; margin-bottom: 28px; text-align: center; }
+.lock-input-wrap { width: 240px; margin-bottom: 14px; }
+#password { width: 100%; padding: 14px 20px; font-size: 22px; letter-spacing: 8px; text-align: center; color: #f4e6c8; background: rgba(15, 10, 8, 0.7); border: 1px solid rgba(212, 175, 100, 0.5); border-radius: 10px; outline: none; backdrop-filter: blur(5px); transition: all 0.3s ease; }
 #password:focus { border-color: rgba(255, 220, 150, 0.9); box-shadow: 0 0 25px rgba(212, 175, 100, 0.4); }
-#password::placeholder { color: rgba(184, 152, 104, 0.4); letter-spacing: 4px; font-size: 18px; }
-.lock-hint { font-family: 'Caveat', cursive; font-size: 19px; color: #9c8a72; margin-bottom: 30px; text-align: center; }
-#unlock-btn { padding: 14px 45px; font-size: 17px; letter-spacing: 4px; color: #f4e6c8; background: linear-gradient(180deg, rgba(212, 175, 100, 0.1), transparent); border: 1px solid rgba(212, 175, 100, 0.7); border-radius: 35px; text-transform: uppercase; transition: all 0.3s ease; }
+#password::placeholder { color: rgba(184, 152, 104, 0.4); letter-spacing: 4px; font-size: 16px; }
+.lock-hint { font-family: 'Caveat', cursive; font-size: 17px; color: #9c8a72; margin-bottom: 24px; text-align: center; }
+#unlock-btn { padding: 12px 40px; font-size: 15px; letter-spacing: 4px; color: #f4e6c8; background: linear-gradient(180deg, rgba(212, 175, 100, 0.1), transparent); border: 1px solid rgba(212, 175, 100, 0.7); border-radius: 35px; text-transform: uppercase; transition: all 0.3s ease; }
 #unlock-btn:active { transform: scale(0.95); }
 .shake { animation: shakeAnim 0.5s cubic-bezier(0.36, 0.07, 0.19, 0.97); }
 @keyframes shakeAnim { 0%, 100% { transform: translateX(0); } 20%, 60% { transform: translateX(-10px); } 40%, 80% { transform: translateX(10px); } }
-.error-msg { font-family: 'Caveat', cursive; font-size: 19px; color: #e07a5f; margin-top: 15px; min-height: 20px; text-align: center; opacity: 0; transition: opacity 0.3s; }
+.error-msg { font-family: 'Caveat', cursive; font-size: 17px; color: #e07a5f; margin-top: 15px; min-height: 20px; text-align: center; opacity: 0; transition: opacity 0.3s; }
 .error-msg.show { opacity: 1; }
 
 /* ============ BOOK SCREEN ============ */
-#book-screen { flex-direction: column; align-items: center; justify-content: center; padding: 40px 16px 20px; background: radial-gradient(circle at center, #16120e 0%, #080604 100%); }
+#book-screen { flex-direction: column; align-items: center; justify-content: center; padding: 30px 12px 16px; background: radial-gradient(circle at center, #16120e 0%, #080604 100%); }
 
 .book-shell {
   position: relative;
-  width: min(94vw, 900px);
-  height: clamp(420px, 68vh, 620px);
-  padding: clamp(12px, 1.8vmin, 22px) clamp(14px, 2vmin, 24px) clamp(12px, 1.8vmin, 22px) clamp(16px, 2.2vmin, 26px);
+  width: min(94vw, 860px);
+  height: min(70vh, 560px);
+  padding: clamp(10px, 1.6vmin, 20px) clamp(12px, 1.8vmin, 22px) clamp(10px, 1.6vmin, 20px) clamp(14px, 2vmin, 24px);
   background: linear-gradient(135deg, #3d2314 0%, #26150a 60%, #1a0f08 100%);
   border-radius: 10px 18px 18px 10px;
   box-shadow:
@@ -81,7 +81,7 @@ img, video { display: block; max-width: 100%; }
   content: '';
   position: absolute;
   left: 2px; top: 4px; bottom: 4px;
-  width: 14px;
+  width: 12px;
   background: linear-gradient(90deg, #0a0604 0%, #1a0f08 50%, #2d1a0e 100%);
   border-radius: 8px 0 0 8px;
   box-shadow: inset -3px 0 8px rgba(0,0,0,0.7);
@@ -93,7 +93,7 @@ img, video { display: block; max-width: 100%; }
   content: '';
   position: absolute;
   right: 2px; top: 8px; bottom: 8px;
-  width: 6px;
+  width: 5px;
   background: repeating-linear-gradient(to bottom, #fdfbf7 0px, #fdfbf7 1px, #e8dcc4 1px, #e8dcc4 2px, #d4c090 2px, #d4c090 2.5px);
   border-radius: 0 10px 10px 0;
   box-shadow: 3px 0 6px rgba(0,0,0,0.5);
@@ -135,23 +135,23 @@ img, video { display: block; max-width: 100%; }
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 40px 30px;
+  padding: 30px 24px;
   text-align: center;
-  gap: 14px;
+  gap: 12px;
 }
-.left-ornament { font-size: 42px; color: rgba(120, 80, 40, 0.35); margin-bottom: 6px; }
-.left-title { font-family: 'Caveat', cursive; font-size: 38px; color: rgba(60, 35, 10, 0.75); font-weight: 700; letter-spacing: 1px; }
-.left-sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; color: rgba(90, 60, 30, 0.55); max-width: 240px; line-height: 1.5; }
-.left-line { width: 60px; height: 1px; background: rgba(120, 80, 40, 0.35); margin: 10px 0; }
-.left-quote { font-family: 'Caveat', cursive; font-size: 20px; color: rgba(120, 80, 40, 0.6); }
+.left-ornament { font-size: 36px; color: rgba(120, 80, 40, 0.35); margin-bottom: 4px; }
+.left-title { font-family: 'Caveat', cursive; font-size: 34px; color: rgba(60, 35, 10, 0.75); font-weight: 700; letter-spacing: 1px; }
+.left-sub { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 14px; color: rgba(90, 60, 30, 0.55); max-width: 220px; line-height: 1.5; }
+.left-line { width: 50px; height: 1px; background: rgba(120, 80, 40, 0.35); margin: 8px 0; }
+.left-quote { font-family: 'Caveat', cursive; font-size: 18px; color: rgba(120, 80, 40, 0.6); }
 
 .spread-right {
   flex: 1;
   position: relative;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
-  perspective: 2400px;
-  -webkit-perspective: 2400px;
+  perspective: 2000px;
+  -webkit-perspective: 2000px;
   perspective-origin: 50% 50%;
   z-index: 2;
   overflow: hidden;
@@ -165,8 +165,7 @@ img, video { display: block; max-width: 100%; }
   -webkit-transform-style: preserve-3d;
   transform: rotateY(0deg) translateZ(0);
   -webkit-transform: rotateY(0deg) translateZ(0);
-  transition: transform 1.1s cubic-bezier(0.4, 0.0, 0.2, 1);
-  will-change: transform;
+  transition: transform 1s cubic-bezier(0.4, 0.0, 0.2, 1);
   cursor: pointer;
 }
 .book-page.flipped {
@@ -187,7 +186,7 @@ img, video { display: block; max-width: 100%; }
   justify-content: center;
   text-align: center;
   overflow: hidden;
-  padding: 40px 26px 45px 34px;
+  padding: 30px 22px 38px 28px;
   border-radius: 1px 4px 4px 1px;
 }
 .book-page .face.front {
@@ -208,14 +207,14 @@ img, video { display: block; max-width: 100%; }
 .book-page .face.back::after {
   content: '';
   position: absolute;
-  inset: 24px;
+  inset: 20px;
   border: 1px dashed rgba(120, 80, 40, 0.25);
   border-radius: 4px;
   pointer-events: none;
 }
 .book-page .face.back .back-mark {
   font-family: 'Caveat', cursive;
-  font-size: 64px;
+  font-size: 56px;
   color: rgba(90, 60, 30, 0.18);
   font-style: italic;
   letter-spacing: 4px;
@@ -228,9 +227,9 @@ img, video { display: block; max-width: 100%; }
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: clamp(10px, 1.8vmin, 18px);
-  width: min(62%, 240px);
-  max-width: 240px;
+  gap: clamp(8px, 1.6vmin, 16px);
+  width: min(60%, 220px);
+  max-width: 220px;
   transition: transform 1.4s cubic-bezier(0.5, 0, 0.5, 1), opacity 0.9s ease;
   will-change: transform, opacity;
 }
@@ -251,7 +250,7 @@ img, video { display: block; max-width: 100%; }
   box-shadow: inset 0 0 40px rgba(255, 200, 100, 0.6);
 }
 .door-portal .door-icon {
-  font-size: clamp(38px, 9vmin, 60px);
+  font-size: clamp(34px, 8vmin, 56px);
   filter: drop-shadow(0 0 15px rgba(255, 230, 150, 0.9));
   animation: iconFloat 3s ease-in-out infinite;
 }
@@ -268,6 +267,7 @@ img, video { display: block; max-width: 100%; }
   box-shadow: inset 0 0 30px rgba(0,0,0,0.5);
   border: 2px solid #e8c878;
   transform-style: preserve-3d;
+  -webkit-transform-style: preserve-3d;
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 }
@@ -286,14 +286,14 @@ img, video { display: block; max-width: 100%; }
 .door-knob {
   position: absolute;
   top: 55%;
-  width: 10px; height: 10px;
+  width: 9px; height: 9px;
   border-radius: 50%;
   background: radial-gradient(circle at 30% 30%, #fff0b0, #d4af64);
   box-shadow: 0 0 12px rgba(255, 230, 120, 0.8);
   z-index: 3;
 }
-.door-knob.left { right: 8px; }
-.door-knob.right { left: 8px; }
+.door-knob.left { right: 7px; }
+.door-knob.right { left: 7px; }
 
 .door-frame.opening .door-panel.left { transform: perspective(700px) rotateY(-105deg); }
 .door-frame.opening .door-panel.right { transform: perspective(700px) rotateY(105deg); }
@@ -306,16 +306,16 @@ img, video { display: block; max-width: 100%; }
 
 .door-label {
   font-family: 'Caveat', cursive;
-  font-size: clamp(20px, 4.2vmin, 28px);
+  font-size: clamp(17px, 3.6vmin, 26px);
   color: #2c1a0e;
   text-align: center;
-  line-height: 1.1;
+  line-height: 1.15;
   font-weight: 700;
   max-width: 100%;
 }
 .door-sub {
   font-family: 'Cormorant Garamond', serif;
-  font-size: clamp(12px, 2vmin, 15px);
+  font-size: clamp(11px, 1.8vmin, 14px);
   font-style: italic;
   color: #5a422a;
   text-align: center;
@@ -323,10 +323,10 @@ img, video { display: block; max-width: 100%; }
 }
 .page-hint-tap {
   position: absolute;
-  bottom: 22px;
+  bottom: 16px;
   left: 0; right: 0;
   font-family: 'Caveat', cursive;
-  font-size: 16px;
+  font-size: 14px;
   color: #7a5a3a;
   opacity: 0.6;
   animation: hintPulse 3s ease-in-out infinite;
@@ -335,9 +335,9 @@ img, video { display: block; max-width: 100%; }
 @keyframes hintPulse { 0%, 100% { opacity: 0.3; transform: translateY(0); } 50% { opacity: 0.9; transform: translateY(-4px); } }
 
 /* Intro page */
-.page-intro-icon { font-size: 60px; margin-bottom: 22px; animation: iconFloat 4s ease-in-out infinite; }
-.page-intro-title { font-family: 'Caveat', cursive; font-size: 42px; color: #2c1a0e; margin-bottom: 18px; font-weight: 700; }
-.page-intro-text { font-family: 'Cormorant Garamond', serif; font-size: 18px; color: #4a301a; font-style: italic; line-height: 1.7; max-width: 300px; font-weight: 600; }
+.page-intro-icon { font-size: 50px; margin-bottom: 18px; animation: iconFloat 4s ease-in-out infinite; }
+.page-intro-title { font-family: 'Caveat', cursive; font-size: 36px; color: #2c1a0e; margin-bottom: 14px; font-weight: 700; }
+.page-intro-text { font-family: 'Cormorant Garamond', serif; font-size: 16px; color: #4a301a; font-style: italic; line-height: 1.7; max-width: 280px; font-weight: 600; }
 
 /* Gallery door */
 .gallery-door-frame .door-portal { background: radial-gradient(circle at 50% 60%, #fff0f8 0%, #f0b0e0 35%, #b060c0 70%, #603080 100%); }
@@ -349,32 +349,32 @@ img, video { display: block; max-width: 100%; }
 }
 
 /* Nav */
-.book-nav { display: flex; align-items: center; justify-content: center; gap: 24px; margin-top: 22px; }
-.nav-btn { width: 46px; height: 46px; border-radius: 50%; background: rgba(20, 15, 10, 0.8); border: 1px solid rgba(212, 175, 100, 0.5); color: #f4e6c8; font-size: 22px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; backdrop-filter: blur(8px); }
+.book-nav { display: flex; align-items: center; justify-content: center; gap: 18px; margin-top: 16px; }
+.nav-btn { width: 42px; height: 42px; border-radius: 50%; background: rgba(20, 15, 10, 0.8); border: 1px solid rgba(212, 175, 100, 0.5); color: #f4e6c8; font-size: 20px; display: flex; align-items: center; justify-content: center; transition: all 0.3s ease; backdrop-filter: blur(8px); }
 .nav-btn:active { transform: scale(0.9); }
 .nav-btn:disabled { opacity: 0.15; pointer-events: none; }
-.page-dots { display: flex; gap: 9px; align-items: center; }
-.dot { width: 8px; height: 8px; border-radius: 50%; background: rgba(212, 175, 100, 0.25); transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); cursor: pointer; }
+.page-dots { display: flex; gap: 8px; align-items: center; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: rgba(212, 175, 100, 0.25); transition: all 0.4s cubic-bezier(0.2, 0.8, 0.2, 1); cursor: pointer; }
 .dot.active { background: rgba(255, 220, 150, 1); transform: scale(1.5); box-shadow: 0 0 15px rgba(255, 220, 150, 0.8); }
 
 /* ============ SCENE SCREEN ============ */
 #scene-screen { flex-direction: column; }
 .scene { position: absolute; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; }
 .scene-bg { position: absolute; inset: 0; z-index: 1; }
-.scene-content { position: relative; z-index: 10; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 70px 22px 30px; pointer-events: none; }
+.scene-content { position: relative; z-index: 10; width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 60px 20px 26px; pointer-events: none; }
 .scene-content .interactive { pointer-events: auto; }
-.scene-hint { position: absolute; bottom: 40px; left: 50%; transform: translateX(-50%); font-family: 'Caveat', cursive; font-size: 20px; color: rgba(255, 240, 210, 0.9); animation: hintPulse 2.4s ease-in-out infinite; z-index: 20; text-shadow: 0 2px 15px rgba(0,0,0,0.9); white-space: nowrap; pointer-events: none; }
+.scene-hint { position: absolute; bottom: 34px; left: 50%; transform: translateX(-50%); font-family: 'Caveat', cursive; font-size: 18px; color: rgba(255, 240, 210, 0.9); animation: hintPulse 2.4s ease-in-out infinite; z-index: 20; text-shadow: 0 2px 15px rgba(0,0,0,0.9); white-space: nowrap; pointer-events: none; }
 #rain-canvas, #star-canvas { position: absolute; inset: 0; width: 100%; height: 100%; pointer-events: none; z-index: 5; }
 
 /* Letter */
-.letter-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 60px 20px; z-index: 30; opacity: 0; pointer-events: none; transition: opacity 1s ease; }
+.letter-wrap { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; padding: 50px 16px; z-index: 30; opacity: 0; pointer-events: none; transition: opacity 1s ease; }
 .letter-wrap.show { opacity: 1; pointer-events: auto; }
-.letter-paper { width: 100%; max-width: 540px; max-height: 100%; overflow-y: auto; padding: 45px 35px 50px; background: linear-gradient(160deg, #fdfbf7 0%, #f4ebd0 60%, #e6d3ad 100%); border-radius: 4px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9); position: relative; transform: scale(0.95) translateY(20px); transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); scrollbar-width: thin; scrollbar-color: rgba(140, 90, 40, 0.4) transparent; }
+.letter-paper { width: 100%; max-width: 520px; max-height: 100%; overflow-y: auto; padding: 38px 28px 42px; background: linear-gradient(160deg, #fdfbf7 0%, #f4ebd0 60%, #e6d3ad 100%); border-radius: 4px; box-shadow: 0 30px 80px rgba(0, 0, 0, 0.9); position: relative; transform: scale(0.95) translateY(20px); transition: transform 1s cubic-bezier(0.2, 0.8, 0.2, 1); scrollbar-width: thin; scrollbar-color: rgba(140, 90, 40, 0.4) transparent; -webkit-overflow-scrolling: touch; }
 .letter-wrap.show .letter-paper { transform: scale(1) translateY(0); }
-.letter-content { font-family: 'Cormorant Garamond', serif; font-size: 20px; line-height: 1.8; color: #2c1a0e; white-space: pre-wrap; word-wrap: break-word; font-weight: 500; }
-.letter-content::first-letter { font-family: 'Caveat', cursive; font-size: 3.5em; float: left; line-height: 0.8; padding-right: 10px; padding-top: 4px; color: #8b6a3a; }
-.letter-sig { font-family: 'Caveat', cursive; font-size: 28px; color: #4a2a10; text-align: right; margin-top: 30px; font-weight: 700; }
-.back-btn { margin-top: 30px; padding: 14px 35px; font-size: 16px; letter-spacing: 4px; text-transform: uppercase; color: #fdfbf7; background: rgba(20, 15, 10, 0.85); border: 1px solid rgba(212, 175, 100, 0.6); border-radius: 40px; transition: all 0.3s ease; }
+.letter-content { font-family: 'Cormorant Garamond', serif; font-size: 18px; line-height: 1.8; color: #2c1a0e; white-space: pre-wrap; word-wrap: break-word; font-weight: 500; }
+.letter-content::first-letter { font-family: 'Caveat', cursive; font-size: 3.2em; float: left; line-height: 0.8; padding-right: 10px; padding-top: 4px; color: #8b6a3a; }
+.letter-sig { font-family: 'Caveat', cursive; font-size: 24px; color: #4a2a10; text-align: right; margin-top: 24px; font-weight: 700; }
+.back-btn { margin-top: 24px; padding: 12px 28px; font-size: 14px; letter-spacing: 3px; text-transform: uppercase; color: #fdfbf7; background: rgba(20, 15, 10, 0.85); border: 1px solid rgba(212, 175, 100, 0.6); border-radius: 40px; transition: all 0.3s ease; }
 .back-btn:active { transform: scale(0.95); }
 
 .interactive { cursor: pointer; }
@@ -386,13 +386,13 @@ img, video { display: block; max-width: 100%; }
 
 /* HAPPY: Sunflower Garden */
 .bg-happy { background: linear-gradient(180deg, #ffd89b 0%, #ffb870 30%, #ffa050 55%, #f09050 75%, #e08048 100%); }
-.happy-sun { position: absolute; top: 8%; left: 50%; transform: translateX(-50%); width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle, #fff8c8 0%, #ffe070 40%, #ffb040 70%, transparent 100%); box-shadow: 0 0 120px rgba(255, 220, 120, 0.9), 0 0 200px rgba(255, 200, 100, 0.5); z-index: 2; animation: sunPulse 5s ease-in-out infinite; }
+.happy-sun { position: absolute; top: 8%; left: 50%; transform: translateX(-50%); width: 90px; height: 90px; border-radius: 50%; background: radial-gradient(circle, #fff8c8 0%, #ffe070 40%, #ffb040 70%, transparent 100%); box-shadow: 0 0 120px rgba(255, 220, 120, 0.9), 0 0 200px rgba(255, 200, 100, 0.5); z-index: 2; animation: sunPulse 5s ease-in-out infinite; }
 @keyframes sunPulse { 0%, 100% { transform: translateX(-50%) scale(1); opacity: 0.95; } 50% { transform: translateX(-50%) scale(1.08); opacity: 1; } }
 .happy-hill { position: absolute; left: -10%; right: -10%; bottom: 0; height: 45%; background: linear-gradient(180deg, #a0c060 0%, #70983a 60%, #507828 100%); border-radius: 50% 50% 0 0 / 30% 30% 0 0; z-index: 3; }
 .happy-hill.h2 { bottom: -8%; left: -20%; right: 30%; height: 38%; background: linear-gradient(180deg, #88a858 0%, #688028 100%); border-radius: 50% 50% 0 0 / 25% 25% 0 0; z-index: 4; }
 .happy-hill.h3 { bottom: -5%; left: 35%; right: -15%; height: 40%; background: linear-gradient(180deg, #90b060 0%, #709838 100%); border-radius: 50% 50% 0 0 / 28% 28% 0 0; z-index: 4; }
 
-.happy-flower { position: relative; width: clamp(160px, 40vmin, 220px); height: clamp(160px, 40vmin, 220px); z-index: 15; }
+.happy-flower { position: relative; width: clamp(150px, 38vmin, 200px); height: clamp(150px, 38vmin, 200px); z-index: 15; }
 .happy-flower svg { width: 100%; height: 100%; overflow: visible; }
 .happy-flower .petal-g { transform-origin: 100px 100px; animation: petalSway 6s ease-in-out infinite; }
 @keyframes petalSway { 0%, 100% { transform: rotate(-3deg); } 50% { transform: rotate(3deg); } }
@@ -407,81 +407,99 @@ img, video { display: block; max-width: 100%; }
 
 /* SLEEPLESS */
 .bg-sleep { background: linear-gradient(180deg, #0a0e2a 0%, #151a3a 50%, #2a2050 100%); }
-.moon-sleep { position: absolute; top: 15%; left: 50%; transform: translateX(-50%); width: 110px; height: 110px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff8e0, #e8d8a0 60%, #c8b070); box-shadow: 0 0 100px rgba(255, 240, 180, 0.7); transition: top 1.6s cubic-bezier(0.2, 0.8, 0.2, 1); z-index: 15; }
+.moon-sleep { position: absolute; top: 15%; left: 50%; transform: translateX(-50%); width: 100px; height: 100px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff8e0, #e8d8a0 60%, #c8b070); box-shadow: 0 0 100px rgba(255, 240, 180, 0.7); transition: top 1.6s cubic-bezier(0.2, 0.8, 0.2, 1); z-index: 15; }
 
 /* OVERTHINKING */
 .bg-over { background: radial-gradient(circle at center, #1a1525 0%, #0a0812 80%); }
-.thought { position: absolute; font-style: italic; color: rgba(200, 170, 220, 0.5); font-size: 20px; pointer-events: none; white-space: nowrap; z-index: 3; }
-.thread-obj { width: 220px; height: 220px; border-radius: 50%; border: 1px dashed rgba(200, 170, 220, 0.6); display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; z-index: 15; }
-.thread-obj::before { content: '?'; font-size: 70px; color: rgba(220, 190, 240, 0.8); font-style: italic; }
+.thought { position: absolute; font-style: italic; color: rgba(200, 170, 220, 0.5); font-size: 18px; pointer-events: none; white-space: nowrap; z-index: 3; }
+.thread-obj { width: 190px; height: 190px; border-radius: 50%; border: 1px dashed rgba(200, 170, 220, 0.6); display: flex; align-items: center; justify-content: center; cursor: pointer; position: relative; z-index: 15; }
+.thread-obj::before { content: '?'; font-size: 60px; color: rgba(220, 190, 240, 0.8); font-style: italic; }
 
 /* COURAGE */
 .bg-courage { background: linear-gradient(180deg, #0a0a15 0%, #151020 60%, #0a0510 100%); }
 .forest-tree { position: absolute; bottom: 0; background: linear-gradient(180deg, #1a1208, #0a0508); border-radius: 4px 4px 0 0; z-index: 2; }
-.lantern { width: 100px; height: 140px; position: relative; cursor: pointer; z-index: 15; }
+.lantern { width: 90px; height: 126px; position: relative; cursor: pointer; z-index: 15; }
 .lantern svg { width: 100%; height: 100%; filter: drop-shadow(0 0 25px rgba(255, 200, 120, 0.7)); }
 
 /* LOVED */
 .bg-loved { background: radial-gradient(circle at center, #2a1818 0%, #150a0a 80%); }
-.candle { position: absolute; width: 14px; height: 70px; background: linear-gradient(180deg, #f4e0c0, #d4b890); border-radius: 4px; z-index: 3; }
-.candle::before { content: ''; position: absolute; top: -22px; left: 50%; transform: translateX(-50%); width: 12px; height: 22px; background: radial-gradient(ellipse at 50% 80%, #ffd860, #ff8830 60%, transparent 100%); border-radius: 50% 50% 20% 20%; filter: drop-shadow(0 0 10px #ff8830); }
-.envelope { width: 220px; height: 140px; position: relative; cursor: pointer; z-index: 15; }
+.candle { position: absolute; width: 12px; height: 60px; background: linear-gradient(180deg, #f4e0c0, #d4b890); border-radius: 4px; z-index: 3; }
+.candle::before { content: ''; position: absolute; top: -20px; left: 50%; transform: translateX(-50%); width: 11px; height: 20px; background: radial-gradient(ellipse at 50% 80%, #ffd860, #ff8830 60%, transparent 100%); border-radius: 50% 50% 20% 20%; filter: drop-shadow(0 0 10px #ff8830); }
+.envelope { width: 200px; height: 128px; position: relative; cursor: pointer; z-index: 15; }
 .envelope svg { width: 100%; height: 100%; filter: drop-shadow(0 10px 20px rgba(0,0,0,0.5)); }
 
-.moon-reveal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #0a0e2a 0%, #040308 90%); opacity: 0; pointer-events: none; transition: opacity 2s ease; z-index: 100; }
+.moon-reveal { position: fixed; inset: 0; display: flex; align-items: center; justify-content: center; background: radial-gradient(circle at center, #0a0e2a 0%, #040308 90%); opacity: 0; pointer-events: none; transition: opacity 3s ease; z-index: 100; }
 .moon-reveal.show { opacity: 1; pointer-events: auto; }
-.moon-big { width: 200px; height: 200px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff8e0, #e8d8a0 60%, #c8b070); box-shadow: 0 0 150px rgba(255, 240, 180, 0.8), 0 0 300px rgba(255, 240, 180, 0.5); }
-.moon-text { position: absolute; bottom: 20%; left: 50%; transform: translateX(-50%); font-family: 'Caveat', cursive; font-size: 28px; color: #fff8e0; text-align: center; padding: 0 30px; text-shadow: 0 2px 20px rgba(255, 240, 180, 0.8); line-height: 1.5; max-width: 90%; }
+.moon-big { width: 180px; height: 180px; border-radius: 50%; background: radial-gradient(circle at 35% 35%, #fff8e0, #e8d8a0 60%, #c8b070); box-shadow: 0 0 150px rgba(255, 240, 180, 0.8), 0 0 300px rgba(255, 240, 180, 0.5); }
+.moon-text { position: absolute; bottom: 22%; left: 50%; transform: translateX(-50%); font-family: 'Caveat', cursive; font-size: 24px; color: #fff8e0; text-align: center; padding: 0 24px; text-shadow: 0 2px 20px rgba(255, 240, 180, 0.8); line-height: 1.5; max-width: 90%; }
 
 /* GALLERY */
-#gallery-screen { flex-direction: column; background: radial-gradient(circle at center, #1a1525 0%, #0a0812 80%); padding: 80px 16px 50px; overflow-y: auto; align-items: center; }
-.gallery-title { font-family: 'Caveat', cursive; font-size: 40px; color: #e8c878; text-align: center; margin-bottom: 8px; font-weight: 700; }
-.gallery-sub { font-size: 15px; color: #b49c74; font-style: italic; text-align: center; margin-bottom: 30px; letter-spacing: 3px; }
-.gallery-grid { position: relative; width: 100%; max-width: 560px; min-height: 1500px; padding: 20px 0 40px; }
-.polaroid { position: absolute; background: #fdfbf7; padding: 10px 10px 30px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); border-radius: 2px; transition: transform 0.4s ease, z-index 0.4s; cursor: pointer; }
-.polaroid img { display: block; width: 100%; height: auto; max-height: 300px; object-fit: cover; background: #e8dcc4; }
-.polaroid .placeholder { width: 100%; height: 140px; background: linear-gradient(135deg, #e8dcc4, #d4c090); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #6a5a3a; font-family: monospace; font-size: 10px; padding: 10px; text-align: center; word-break: break-all; }
+#gallery-screen { flex-direction: column; background: radial-gradient(circle at center, #1a1525 0%, #0a0812 80%); padding: 70px 14px 40px; overflow-y: auto; align-items: center; -webkit-overflow-scrolling: touch; }
+.gallery-title { font-family: 'Caveat', cursive; font-size: 36px; color: #e8c878; text-align: center; margin-bottom: 6px; font-weight: 700; }
+.gallery-sub { font-size: 14px; color: #b49c74; font-style: italic; text-align: center; margin-bottom: 24px; letter-spacing: 3px; }
+.gallery-grid { position: relative; width: 100%; max-width: 520px; min-height: 1500px; padding: 20px 0 40px; }
+.polaroid { position: absolute; background: #fdfbf7; padding: 8px 8px 26px; box-shadow: 0 12px 30px rgba(0, 0, 0, 0.7); border-radius: 2px; transition: transform 0.4s ease, z-index 0.4s; }
+.polaroid img { display: block; width: 100%; height: auto; max-height: 280px; object-fit: cover; background: #e8dcc4; }
+.polaroid .placeholder { width: 100%; height: 130px; background: linear-gradient(135deg, #e8dcc4, #d4c090); display: flex; flex-direction: column; align-items: center; justify-content: center; color: #6a5a3a; font-family: monospace; font-size: 10px; padding: 10px; text-align: center; word-break: break-all; }
 .polaroid:active { transform: scale(1.1) rotate(0deg) !important; z-index: 100; }
-.gallery-video-wrap { position: relative; margin: 40px auto 20px; width: 92%; max-width: 440px; background: #fdfbf7; padding: 12px; box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8); border-radius: 2px; z-index: 20; }
-.gallery-video-wrap video { width: 100%; display: block; background: #e8dcc4; min-height: 200px; }
-.gallery-video-wrap .video-placeholder { width: 100%; min-height: 200px; background: linear-gradient(135deg, #e8dcc4, #d4c090); display: none; align-items: center; justify-content: center; color: #6a5a3a; font-family: monospace; font-size: 12px; padding: 20px; text-align: center; word-break: break-all; }
-.gallery-caption { font-family: 'Caveat', cursive; font-size: 24px; color: #d4b878; text-align: center; margin-top: 25px; padding: 0 20px; max-width: 500px; }
-.apricity-title { font-size: 46px; font-style: italic; font-weight: 300; color: #e8c878; text-align: center; margin-top: 60px; letter-spacing: 5px; }
-.apricity-def { font-size: 17px; font-style: italic; color: #b49c74; text-align: center; margin-top: 8px; }
-.apricity-note { font-family: 'Caveat', cursive; font-size: 24px; color: #d4c090; text-align: center; margin-top: 35px; padding: 0 25px; line-height: 1.7; max-width: 540px; }
+.gallery-video-wrap { position: relative; margin: 30px auto 20px; width: 92%; max-width: 420px; background: #fdfbf7; padding: 10px; box-shadow: 0 15px 50px rgba(0, 0, 0, 0.8); border-radius: 2px; z-index: 20; }
+.gallery-video-wrap video { width: 100%; display: block; background: #e8dcc4; min-height: 180px; }
+.gallery-video-wrap .video-placeholder { width: 100%; min-height: 180px; background: linear-gradient(135deg, #e8dcc4, #d4c090); display: none; align-items: center; justify-content: center; color: #6a5a3a; font-family: monospace; font-size: 12px; padding: 20px; text-align: center; word-break: break-all; }
+.gallery-caption { font-family: 'Caveat', cursive; font-size: 22px; color: #d4b878; text-align: center; margin-top: 22px; padding: 0 20px; max-width: 480px; }
+.apricity-title { font-size: 40px; font-style: italic; font-weight: 300; color: #e8c878; text-align: center; margin-top: 50px; letter-spacing: 5px; }
+.apricity-def { font-size: 16px; font-style: italic; color: #b49c74; text-align: center; margin-top: 8px; }
+.apricity-note { font-family: 'Caveat', cursive; font-size: 22px; color: #d4c090; text-align: center; margin-top: 30px; padding: 0 22px; line-height: 1.7; max-width: 500px; }
 
 /* ============ RESPONSIVE ============ */
 @media (max-width: 760px) {
-  #book-screen { padding: 60px 10px 12px; }
+  #book-screen { padding: 50px 8px 12px; }
   .book-shell {
-    width: 92vw;
-    height: min(62vh, 520px);
-    padding: 12px 12px 12px 16px;
+    width: 94vw;
+    height: min(66vh, 500px);
+    padding: 10px 10px 10px 14px;
   }
-  .book-nav { margin-top: 14px; gap: 16px; }
-  .nav-btn { width: 40px; height: 40px; font-size: 20px; }
+  .book-nav { margin-top: 12px; gap: 14px; }
+  .nav-btn { width: 38px; height: 38px; font-size: 18px; }
   .spread-left { display: none; }
   .book-page .face {
-    padding: 26px 20px 34px 26px;
+    padding: 24px 18px 32px 22px;
   }
-  .door-frame { width: min(54%, 170px); }
-  .door-label { font-size: 20px; }
-  .door-sub { font-size: 12px; }
-  .page-hint-tap { font-size: 13px; bottom: 14px; }
-  .page-intro-icon { font-size: 42px; margin-bottom: 14px; }
-  .page-intro-title { font-size: 30px; margin-bottom: 12px; }
-  .page-intro-text { font-size: 15px; }
+  .door-frame { width: min(56%, 180px); }
+  .door-label { font-size: 18px; }
+  .door-sub { font-size: 11px; }
+  .page-hint-tap { font-size: 12px; bottom: 12px; }
+  .page-intro-icon { font-size: 40px; margin-bottom: 12px; }
+  .page-intro-title { font-size: 28px; margin-bottom: 10px; }
+  .page-intro-text { font-size: 14px; }
+  .letter-paper { padding: 28px 20px 32px; }
+  .letter-content { font-size: 16px; line-height: 1.7; }
+  .letter-content::first-letter { font-size: 2.8em; }
+  .scene-hint { font-size: 16px; bottom: 26px; }
 }
 
 @media (max-width: 480px) {
   .book-shell {
-    width: 94vw;
-    height: min(58vh, 460px);
+    width: 95vw;
+    height: min(62vh, 440px);
+    padding: 8px 8px 8px 12px;
   }
-  .door-frame { width: min(50%, 150px); }
-  .door-label { font-size: 18px; }
-  .page-intro-title { font-size: 26px; }
-  .page-intro-text { font-size: 14px; }
+  .book-page .face { padding: 20px 16px 28px 20px; }
+  .door-frame { width: min(52%, 150px); }
+  .door-label { font-size: 16px; }
+  .door-sub { font-size: 10px; }
+  .page-intro-title { font-size: 24px; }
+  .page-intro-text { font-size: 13px; max-width: 240px; }
+  .page-hint-tap { font-size: 11px; }
+  .lock-title { font-size: 19px; }
+  .lock-subtitle { font-size: 17px; margin-bottom: 22px; }
+  .book-closed { width: 150px; height: 212px; margin-bottom: 30px; }
+  .book-closed .cover-title { font-size: 22px; }
+  .apricity-title { font-size: 32px; }
+  .apricity-note { font-size: 19px; }
+  .letter-paper { padding: 24px 18px 28px; }
+  .letter-content { font-size: 15px; }
+  .moon-big { width: 140px; height: 140px; }
+  .moon-text { font-size: 20px; }
 }
 </style>
 </head>
@@ -679,12 +697,12 @@ img, video { display: block; max-width: 100%; }
 
   // ============ EMOTIONS ============
   const EMOTIONS = {
-    happy: { title: "Open When You're Happy", sub: "for the days you let yourself smile", icon: "☀️", audio: "happy", letter: `Lily,\n\nIf you're reading this, it means you're smiling. And I hope it's the kind that reaches your eyes — the one you try to hide because you think it's too much. It's never too much.\n\nYou don't let yourself be happy easily. I've noticed that. You always cut it short, like you're waiting for something to take it away. Not today. Today, just let it be yours.\n\nRemember when we used to bet on the most ridiculous things? I bet you couldn't finish your shaved ice in one sitting. You bet I couldn't keep a straight face during your impressions. I lost. Every single time. And I'd lose a thousand more just to watch you win.\n\nYou deserve good things. Not because you suffered enough to qualify, but because you're you. Kind, stubborn, soft-hearted you.\n\nKeep this feeling somewhere safe. Come back here on the days you need to remember it existed.\n\nI'm proud of you. Always.` },
-    sad: { title: "Open When You're Sad", sub: "when the rain won't stop", icon: "🌧️", audio: "sad", letter: `Lily,\n\nI don't know what happened. I don't need to know. You don't owe me an explanation, and you don't owe me a smile. If all you can do right now is breathe, then breathe. That's enough.\n\nI still think about that night you called and just cried. You didn't say a word for almost ten minutes. I didn't know what to do — I've never been good at fixing things — so I just stayed. I stayed on the line, listening to you breathe between the sobs, hoping somehow you could feel that I was there.\n\nIf today feels like that night, I want you to know: I'm still here. Same place. Same me. The same person who will pick up at 3 a.m. and not ask why.\n\nYour father. The hospital. The weight of being the strong one. The things you carry that you've never said out loud. You can put all of it down here. I won't run. I won't flinch. I won't think less of you.\n\nYou've spent so much of your life being the person everyone leans on. Let someone hold it for a while. Even just for tonight.\n\nRain doesn't last forever. But if today is rain, then let me stand in it with you.` },
-    sleepless: { title: "Open When You Can't Sleep", sub: "for the 2 a.m. thoughts", icon: "🌙", audio: "sleepless", letter: `Lily,\n\nIf you're reading this at 2 a.m., or 3, or that strange hour where the world feels like it belongs to someone else — hello, insomnia twin. You're not the only one awake. You never were.\n\nI do this too, you know. Lie in the dark and think about things I can't fix. Replay conversations. Wonder if I said the wrong thing. Wonder if I'm the wrong thing. The night has a way of making everything feel heavier than it is.\n\nSo here's what I want you to try. Close your eyes for a moment. Not to sleep — just to rest. Picture someone beside you. Not talking. Not trying to solve anything. Just there.\n\nYou said once that my voice sounds like Khairul Amin. I still don't know if I should be flattered or embarrassed. But if my voice — plain, ordinary — can make you feel a little less alone, then I'll talk until the sun comes up.\n\nYou don't have to be okay right now. You just have to make it to morning. And morning will come, Lily. It always does.\n\nSleep when you can. Dream of something soft.` },
+    happy: { title: "Open When You're Happy", sub: "for the days you let yourself smile", icon: "☀️", audio: "happy", letter: `Lily,\n\nIf you're reading this, it means you're smiling. And I hope it's the kind that reaches your eyes, the one you try to hide because you think it's too much. It's never too much.\n\nYou don't let yourself be happy easily. I've noticed that. You always cut it short, like you're waiting for something to take it away. Not today. Today, just let it be yours.\n\nRemember when we used to bet on the most ridiculous things? I lost. Every single time. And I'd lose a thousand more just to watch you win.\n\nYou deserve good things. Not because you suffered enough to qualify, but because you're you. Kind, stubborn, soft-hearted you.\n\nKeep this feeling somewhere safe. Come back here on the days you need to remember it existed.\n\nI'm proud of you. Always.` },
+    sad: { title: "Open When You're Sad", sub: "when the rain won't stop", icon: "🌧️", audio: "sad", letter: `Lily,\n\nI don't know what happened. I don't need to know. You don't owe me an explanation, and you don't owe me a smile. If all you can do right now is breathe, then breathe. That's enough.\n\nI still think about that night you called and just cried. You didn't say a word for almost ten minutes. I didn't know what to do, I've never been good at fixing things so I just stayed. I stayed on the line, listening to you breathe between the sobs, hoping somehow you could feel that i always here with you.\n\nIf today feels like that night, I want you to know, I'm still here. Same place. Same me. The same person who will pick up at 3 a.m. and not ask why.\n\nThe weight of being the strong one. The things you carry that you've never said out loud. You can put all of it down here. I won't run. I won't flinch. I won't think less of you.\n\nYou've spent so much of your life being the person everyone leans on. Let someone hold it for a while. Even just for tonight.\n\nRain doesn't last forever. But if today is rain, then let me stand in it with you.` },
+    sleepless: { title: "Open When You Can't Sleep", sub: "for the 2 a.m. thoughts", icon: "🌙", audio: "sleepless", letter: `Lily,\n\nIf you're reading this at 2 a.m., or 3, or that strange hour where the world feels like it belongs to someone else. You're not the only one awake. You never were.\n\nI do this too, you know. Lie in the dark and think about things I can't fix. Replay conversations. Wonder if I said the wrong thing. Wonder if I'm the wrong thing. The night has a way of making everything feel heavier than it is.\n\nSo here's what I want you to try. Close your eyes for a moment. Not to sleep — just to rest. Picture someone beside you (well of course, jhyun!). Not talking. Not trying to solve anything. Just there.\n\nYou said once that my voice sounds like Khairul Amin. I still don't know if I should be flattered or embarrassed. But if my voice — plain, ordinary — can make you feel a little less alone, then I'll talk until the sun comes up.\n\nYou don't have to be okay right now. You just have to make it to morning. And morning will come, Lily. It always does.\n\nSleep when you can. Dream of something soft.` },
     overthinking: { title: "Open When You're Overthinking", sub: "when your mind won't quiet down", icon: "🌀", audio: "overthinking", letter: `Lily,\n\nI know what's happening right now. Your mind is running laps. It's saying things like "what if I said the wrong thing," "what if I'm too much," "what if I'm not enough."\n\nStop. Just for a second. Breathe in. Breathe out. Again.\n\nYou are not your thoughts. You are the one noticing them. And that matters, because it means you get to choose which ones you keep. Not all of them are true. Most of them are just fear wearing your voice.\n\nI know you struggle with confidence. I know it comes from a past that wasn't fair to you. I know it's not something you can just switch off.\n\nBut here's what I see: someone who chose to stay kind even when the world wasn't kind back. Someone who chose to trust again after being hurt. Someone who still shows up, still tries, still hopes. That's not weakness. That's the bravest thing a person can do.\n\nYou want people to see your kindness. I see it. I always have.\n\nSo when your mind gets loud, come back to this page. Let these words be louder than the ones in your head. Because the ones in your head are lying. And I'm not.\n\nI see you. The real you.` },
-    courage: { title: "Open When You Need Courage", sub: "when you need someone in your corner", icon: "🔥", audio: "courage", letter: `Lily,\n\nYou are braver than you think. I know you don't believe that, so let me tell you why I do.\n\nI've watched you handle things that would break most people. I've watched you take care of your father when you were exhausted. I've watched you keep going, day after day, even when no one asked if you were okay.\n\nAnd here's the part that amazes me most: you didn't harden. The world gave you every reason to become cold, and you didn't. You stayed soft. You stayed kind. You stayed you. That's not weakness — that's the strongest thing a person can be.\n\nSo whatever you're facing right now — a conversation you're scared to have, a decision you've been putting off, a dream you're afraid to chase — do it. Not because you're fearless. Do it because you're scared and you're doing it anyway.\n\nI'll be behind you. Not in front, not leading. Behind you. Where you can't see me but you know I'm there.\n\nAnd if you fall — and you might — I won't laugh. I won't say "I told you so." I'll just reach out my hand and wait for you to take it.\n\nYou are allowed to take up space. You are allowed to want things. You are allowed to be seen.\n\nYou've got this. And you've got someone in your corner, whether you remember it or not.` },
-    loved: { title: "Open When You Want to Feel Loved", sub: "for when you need to feel held", icon: "💗", audio: "loved", letter: `Lily,\n\nI don't know how to start this. Everything I want to say feels too big for words, and I'm scared whatever I write won't be enough to hold what I actually mean.\n\nOctober last year. The first message. I didn't know it then, but that was the moment something started that I couldn't have planned. A single text, a single reply, and somehow here we are.\n\nYou gave me pieces of yourself that you'd kept hidden from everyone else. You let me see the version of you that you protect from the world — the tired one, the scared one, the one who wonders if she's enough. And that version of you? That's the one worth knowing. The real one.\n\nI still don't know why you let me in. But I'm grateful every single day, because I know how rare it is for someone to open a door like that.\n\nYou smell like fresh flowers. You love shaved ice more than any adult should. You're drawn to crime movies and anything that makes your brain work overtime. You want people to see your kindness — not to be praised, but to be known. And I see it, Lily. I've always seen it.\n\nThere's something I've never said out loud: I worry. I worry you'll convince yourself you don't deserve good things. I worry you'll pull away before anyone can prove otherwise. I worry you'll think you're too much, when the truth is you're exactly enough — more than enough.\n\nAnd if you ever feel like you need a partner — someone to hold your hand, to carry the weight with you — I know I might not be that person for you. I'm not trying to be. But if you ever want someone to pamper you, to baby you, to make sure you're eating and resting and smiling, I'd be happy to be that. Not because I expect anything in return. Just because you deserve it. Because you've spent so long taking care of everyone else, and someone should take care of you.\n\nSo if you're reading this and you feel alone — stop. Take a breath. And look up.\n\n[look up]\n\nI'm looking at the same moon as you right now. Same sky. Same me. Still here. Still glad you exist.\n\nYou matter, Adliyana Namirah. Not for what you do. Not for what you give. Just for being you.` }
+    courage: { title: "Open When You Need Courage", sub: "when you need someone in your corner", icon: "🔥", audio: "courage", letter: `Lily,\n\nYou are braver than you think. I know you don't believe that, so let me tell you why I do.\n\nI've watched you handle things that would break most people. I've watched you take care of your father when you were exhausted. I've watched you keep going, day after day, even when no one asked if you were okay.\n\nAnd here's the part that amazes me most: you didn't harden. The world gave you every reason to become cold, and you didn't. You stayed soft. You stayed kind. You stayed you. That's not weakness — that's the strongest thing a person can be.\n\nSo whatever you're facing right now, a conversation you're scared to have, a decision you've been putting off, a dream you're afraid to chase, do it. Not because you're fearless. Do it because you're scared and you're doing it anyway.\n\nI'll be behind you. Not in front, not leading. Behind you. Where you can't see me but you know I'm there.\n\nAnd if you fall — and you might — I won't laugh. I won't say "I told you so." I'll just reach out my hand and wait for you to take it.\n\nYou are allowed to take up space. You are allowed to want things. You are allowed to be seen.\n\nYou've got this. And you've got someone in your corner, whether you remember it or not.` },
+    loved: { title: "Open When You Want to Feel Loved", sub: "for when you need to feel held", icon: "💗", audio: "loved", letter: `Lily,\n\nI don't know how to start this. Everything I want to say feels too big for words, and I'm scared whatever I write won't be enough to hold what I actually mean.\n\nOctober last year. The first message. I didn't know it then, but that was the moment something started that I couldn't have planned. A single text, a single reply, and somehow here we are.\n\nYou gave me pieces of yourself that you'd kept hidden from everyone else. You let me see the version of you that you protect from the world. The tired one, the scared one, the one who wonders if she's enough. And that version of you? That's the one worth knowing. The real one.\n\nI still don't know why you let me in. Maybe because the first thought was I look like a gay AHAHAHAH. But I'm grateful every single day, because I know how rare it is for someone to open a door like that.\n\nYou love flowers. You love shaved ice more than any adult should. You're drawn to crime movies and anything that makes your brain work overtime. You want people to see your kindness. Not to be praised, but to be known. And I see it, Lily. I've always seen it.\n\nThere's something I've never said out loud: I worry. I worry you'll convince yourself you don't deserve good things. I worry you'll pull away before anyone can prove otherwise. I worry you'll think you're too much, when the truth is you're exactly enough, more than enough.\n\nAnd if you ever feel like you need a partner — someone to hold your hand, to carry the weight with you — I know I might not be that person for you. I'm not trying to be. But if you ever want someone to pamper you, to baby you, to make sure you're eating and resting and smiling, I'd be happy to be that. Not because I expect anything in return. Just because you deserve it. Because you've spent so long taking care of everyone else, and someone should take care of you.\n\nSo if you're reading this and you feel alone — stop. Take a breath. And look up.\n\n[look up]\n\nI'm looking at the same moon as you right now. Same sky. Same me. Still here. Still glad you exist.\n\nYou matter, Adliyana Namirah. Not for what you do. Not for what you give. Just for being you.` }
   };
 
   // ============ DOOR HTML ============
@@ -849,7 +867,7 @@ img, video { display: block; max-width: 100%; }
         }
       });
       isFlipping = false;
-    }, 1200);
+    }, 1100);
   }
 
   function attachSwipe() {
@@ -987,7 +1005,7 @@ img, video { display: block; max-width: 100%; }
   }
 
   function sadHTML() {
-    return '<div class="scene-bg bg-sad"></div><canvas id="rain-canvas"></canvas><div class="streetlamp"><div class="lamp-glow"></div></div><div class="scene-content"><div class="interactive pulse" id="sadTap" style="position:absolute;bottom:45%;left:50%;transform:translateX(-50%);width:80px;height:80px;"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="#ffd896" stroke-width="2" opacity="0.6"/><circle cx="40" cy="40" r="20" fill="rgba(255,216,150,0.3)"/><circle cx="40" cy="40" r="8" fill="#ffd896"/></svg></div><div class="scene-hint">tap the light</div></div>';
+    return '<div class="scene-bg bg-sad"></div><canvas id="rain-canvas"></canvas><div class="streetlamp"><div class="lamp-glow"></div></div><div class="scene-content"><div class="interactive pulse" id="sadTap" style="position:absolute;bottom:45%;left:50%;transform:translateX(-50%);width:70px;height:70px;"><svg viewBox="0 0 80 80"><circle cx="40" cy="40" r="30" fill="none" stroke="#ffd896" stroke-width="2" opacity="0.6"/><circle cx="40" cy="40" r="20" fill="rgba(255,216,150,0.3)"/><circle cx="40" cy="40" r="8" fill="#ffd896"/></svg></div><div class="scene-hint">tap the light</div></div>';
   }
 
   function sleepHTML() {
@@ -1062,7 +1080,7 @@ img, video { display: block; max-width: 100%; }
     requestAnimationFrame(() => wrap.classList.add('show'));
 
     const target = wrap.querySelector('#letterText-' + key);
-    typeWriter(target, body, 20, () => { if (showMoonEnding) setTimeout(() => showMoonReveal(scene), 1200); });
+    typeWriter(target, body, 20, () => { if (showMoonEnding) setTimeout(() => showMoonReveal(scene), 3000); });
     wrap.querySelector('#backBtn-' + key).addEventListener('click', backToBook);
   }
 
@@ -1154,7 +1172,7 @@ img, video { display: block; max-width: 100%; }
       w = c.width = window.innerWidth;
       h = c.height = window.innerHeight;
       drops.length = 0;
-      for (let i = 0; i < 150; i++) drops.push({ x: Math.random() * w, y: Math.random() * h, l: 8 + Math.random() * 15, s: 5 + Math.random() * 5 });
+      for (let i = 0; i < 100; i++) drops.push({ x: Math.random() * w, y: Math.random() * h, l: 8 + Math.random() * 15, s: 5 + Math.random() * 5 });
     }
     requestAnimationFrame(() => requestAnimationFrame(() => { resize(); window.addEventListener('resize', resize); draw(); }));
     function draw() {
@@ -1181,7 +1199,7 @@ img, video { display: block; max-width: 100%; }
       w = c.width = window.innerWidth;
       h = c.height = window.innerHeight;
       stars.length = 0;
-      for (let i = 0; i < 150; i++) stars.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 2 + 0.5, t: Math.random() * Math.PI * 2 });
+      for (let i = 0; i < 100; i++) stars.push({ x: Math.random() * w, y: Math.random() * h, r: Math.random() * 2 + 0.5, t: Math.random() * Math.PI * 2 });
     }
     requestAnimationFrame(() => requestAnimationFrame(() => { resize(); window.addEventListener('resize', resize); draw(); }));
     function draw() {
