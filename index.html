@@ -1080,7 +1080,7 @@ img, video { display: block; max-width: 100%; }
     requestAnimationFrame(() => wrap.classList.add('show'));
 
     const target = wrap.querySelector('#letterText-' + key);
-    typeWriter(target, body, 20, () => { if (showMoonEnding) setTimeout(() => showMoonReveal(scene), 3000); });
+    typeWriter(target, body, 20, () => { if (showMoonEnding) setTimeout(() => showMoonReveal(scene), 5000); });
     wrap.querySelector('#backBtn-' + key).addEventListener('click', backToBook);
   }
 
